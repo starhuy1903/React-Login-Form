@@ -1,10 +1,9 @@
 import React, {useEffect, useRef, useState} from 'react';
-import AuthContext from "../context/AuthProvider";
 import axios from "../api/axios";
 import useAuth from "../hooks/useAuth";
 import {useLocation, useNavigate} from "react-router-dom";
 
-const LOGIN_URL = "/login"
+const LOGIN_URL = "/auth"
 
 const Login = () => {
     const {setAuth} = useAuth();
