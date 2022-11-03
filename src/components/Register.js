@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {faCheck, faTimes, faInfoCircle} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import axios from './api/axios'
+import axios from '../api/axios'
 
 const USER_REGEX = /^[A-Za-z][A-Za-z0-9_]{3,23}$/;
 const PWD_REGEX = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,24}$/;
@@ -91,7 +91,7 @@ const Register = () => {
             <section>
                 <h1>Success!</h1>
                 <p>
-                    <a href="#">Sign In</a>
+                    <a href="src/components/Register#">Sign In</a>
                 </p>
             </section>
         ) : (
@@ -195,7 +195,7 @@ const Register = () => {
                     Already registered? <br/>
                     <span className="line">
                 {/*    put router link here*/}
-                        <a href="#">Sign in</a>
+                        <a href="src/components/Register#">Sign in</a>
                 </span>
                 </p>
             </section>
